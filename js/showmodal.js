@@ -303,6 +303,12 @@ function showPurchaseModal(book)
         case "3rdGradeSpanish":
             purchaseHeader.innerHTML = "Third Grade Spanish";
             break;
+        case "4thGradeSpanish":
+            purchaseHeader.innerHTML = "Fourth Grade Spanish";
+            break;
+        case "5thGradeSpanish":
+            purchaseHeader.innerHTML = "Fifth Grade Spanish";
+            break;
     }
     purchaseHeader.style.color = "white";
     purchaseModal.style.visibility = "visible";
@@ -369,9 +375,13 @@ function showPurchasePage()
             window.open("https://www.createspace.com/4280105");
             break;
         case "Third Grade Spanish":
-            //window.open("https://www.createspace.com/6295527");
-            purchaseHeader.innerHTML = "This book is not yet available.";
-            purchaseHeader.style.color = "#FF0000";
+            window.open("https://www.createspace.com/6295527");
+            break;
+        case "Fourth Grade Spanish":
+            window.open("https://www.createspace.com/6702998");
+            break;
+        case "Fifth Grade Spanish":
+            window.open("https://www.createspace.com/6705584");
             break;
         }
 }
@@ -409,6 +419,12 @@ function showSamplePage()
             break;
         case "Third Grade Spanish":
             window.open("/media/ThirdGradeSpanishSample.jpg");
+            break;
+        case "Fourth Grade Spanish":
+            //window.open("/media/FourthGradeSpanishSample.jpg");
+            break;
+        case "Fifth Grade Spanish":
+            //window.open("/media/FifthGradeSpanishSample.jpg");
             break;
     }
 }

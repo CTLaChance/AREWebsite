@@ -69,6 +69,7 @@ body{
     margin-left: 2px;
     margin-right: 2px;
     -webkit-transition:  -webkit-filter .2s ease;
+    cursor: pointer;
 }
 
 .covers img:hover{
@@ -86,6 +87,13 @@ body{
     top: 0;
 }
 
+.tabs{
+    background-color: #111111;
+    position: relative;
+    margin-bottom: -10px;
+    height: 40px;
+}
+
 .header h1{
     width: 90%;
     margin-left: auto;
@@ -98,10 +106,13 @@ body{
     margin-bottom: -10px;
     width: 23%;
     font-size: 18pt;
+    cursor:  pointer;
 }
 
 .tablink{
     transition: color .2s ease;
+    position: relative;
+    top: 17%;
 }
 
 .tablink:hover{
@@ -309,6 +320,7 @@ body{
 .purchaseButton{
     background-color: #00E676;
     transition: background-color .2s ease;
+    cursor: pointer;
 }
 
 .purchaseButton:hover{
@@ -318,6 +330,7 @@ body{
 #sampleButton{
     background-color: #03A9F4;
     transition: background-color .2s ease;
+    cursor: pointer;
 }
 
 #sampleButton:hover{
