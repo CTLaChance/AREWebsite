@@ -421,10 +421,10 @@ function showSamplePage()
             window.open("/media/ThirdGradeSpanishSample.jpg");
             break;
         case "Fourth Grade Spanish":
-            //window.open("/media/FourthGradeSpanishSample.jpg");
+            window.open("/media/FourthGradeSpanishSample.jpg");
             break;
         case "Fifth Grade Spanish":
-            //window.open("/media/FifthGradeSpanishSample.jpg");
+            window.open("/media/FifthGradeSpanishSample.jpg");
             break;
     }
 }
