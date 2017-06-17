@@ -363,10 +363,10 @@ function showPurchasePage()
             window.open("https://www.createspace.com/3772674");
             break;
         case "Pre-Algebra":
-            window.open("https://www.createspace.com/3777315");
+            window.open("https://www.createspace.com/6870966");
             break;
         case "Algebra 1":
-            window.open("https://www.createspace.com/3619230");
+            window.open("https://www.createspace.com/7267564");
             break;
         case "Geometry":
             window.open("https://www.createspace.com/4280117");
@@ -409,7 +409,7 @@ function showSamplePage()
             window.open("/media/Pre-AlgebraSample.jpg");
             break;
         case "Algebra 1":
-            window.open("/media/Algebra1Sample.jpg");
+            window.open("/media/Algebra1RevisedSample.jpg");
             break;
         case "Geometry":
             window.open("/media/GeometrySample.jpg");
