@@ -342,46 +342,45 @@ function hidePurchaseModal()
     } 
 }
 
-
 function showPurchasePage()
 {
     var purchaseHeader = document.getElementById("purchaseHeader");
     switch(purchaseHeader.innerHTML){
         case "Third Grade":
-            window.open("https://www.createspace.com/5266215");
+            window.open("http://amzn.to/2H5P1zH");
             break;
         case "Fourth Grade":
-            window.open("https://www.createspace.com/4592664");
+            window.open("http://amzn.to/2nRNKV8");
             break;
         case "Fifth Grade":
-            window.open("https://www.createspace.com/4592624");
+            window.open("http://amzn.to/2H5JSYE");
             break;
         case "Sixth Grade":
-            window.open("https://www.createspace.com/3772454");
+            window.open("http://amzn.to/2BmlzoQ");
             break;
         case "Seventh Grade":
-            window.open("https://www.createspace.com/3772674");
+            window.open("http://amzn.to/2EkBg2s");
             break;
         case "Pre-Algebra":
-            window.open("https://www.createspace.com/6870966");
+            window.open("http://amzn.to/2H8v7nY");
             break;
         case "Algebra 1":
-            window.open("https://www.createspace.com/7267564");
+            window.open("http://amzn.to/2snMIVE");
             break;
         case "Geometry":
-            window.open("https://www.createspace.com/4280117");
+            window.open("http://amzn.to/2EZisTL");
             break;
         case "Algebra 2":
-            window.open("https://www.createspace.com/4280105");
+            window.open("http://amzn.to/2CcCUxc");
             break;
         case "Third Grade Spanish":
-            window.open("https://www.createspace.com/6295527");
+            window.open("http://amzn.to/2EXhzLq");
             break;
         case "Fourth Grade Spanish":
-            window.open("https://www.createspace.com/6702998");
+            window.open("http://amzn.to/2EifMDf");
             break;
         case "Fifth Grade Spanish":
-            window.open("https://www.createspace.com/6705584");
+            window.open("http://amzn.to/2EkBpD2");
             break;
         }
 }
