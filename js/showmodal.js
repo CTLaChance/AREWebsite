@@ -359,7 +359,7 @@ function showPurchasePage()
             window.open("http://amzn.to/2BmlzoQ");
             break;
         case "Seventh Grade":
-            window.open("http://amzn.to/2EkBg2s");
+            window.open("https://amzn.to/2Jx1Pm3");
             break;
         case "Pre-Algebra":
             window.open("http://amzn.to/2H8v7nY");
