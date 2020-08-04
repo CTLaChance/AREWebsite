@@ -1,7 +1,5 @@
 <script>
+	import Header from './Header.svelte';
 </script>
 
-<style>
-</style>
-
-<h1>ALGEBRA READINESS EDUCATORS</h1>
+<Header />
