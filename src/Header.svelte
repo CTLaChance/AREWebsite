@@ -6,7 +6,7 @@
         display: flex;
         justify-content: space-between;
         width: 70%;
-        height: 100px;
+        height: 150px;
         margin: auto;
         align-items: center;
 
@@ -30,6 +30,15 @@
             flex-grow: 1;
             display: flex;
             justify-content: space-evenly;
+            
+            > * {
+                padding: 10px 15px;
+
+                &:hover {
+                    color: white;
+                    background-color: black;
+                }
+            }
         }
     }
 </style>
