@@ -33,6 +33,8 @@
             
             > * {
                 padding: 10px 15px;
+                border: 2px solid black;
+                border-radius: 20px;
 
                 &:hover {
                     color: white;
