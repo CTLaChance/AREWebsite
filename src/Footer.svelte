@@ -4,11 +4,23 @@
 <style lang="scss">
     #footer {
         padding: 50px 15%;
-
         background-color: #fafafa;
 
-        #footer-upper {
+        #footer-main {
+            margin-bottom: 25px;
+            display: flex;
             
+            > * {
+                width: 50%;
+            }
+
+            :first-child {
+                display: flex;
+
+                #tagline {
+                    margin: auto;
+                }
+            }
         }
 
         #footer-lower {
@@ -45,9 +57,21 @@
 
 <div id="footer">
     <div id="footer-main">
-        <ul>
-            <li>About</li>
-        </ul>
+        <div>
+            <img src="./favicon.png" height="128px" alt="Company Logo">
+            <div id="tagline">
+                Algebra Readiness Educators, LLC is a company that does stuff and offers products like the ones above. Buy our stuff please.
+            </div>
+            <div id="social-media">
+                
+            </div>
+        </div>
+        <div>
+            <div>About</div>
+            <div>Contact</div>
+            <div>Testimonials</div>
+            <div>Media Kit</div>
+        </div>
     </div>
 
     <div id="footer-lower">
