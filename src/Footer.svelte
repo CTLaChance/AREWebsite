@@ -3,8 +3,9 @@
 
 <style lang="scss">
     #footer {
-        margin: 50px auto;
-        width: 70%;
+        padding: 50px 15%;
+
+        background-color: #fafafa;
 
         #footer-upper {
             
