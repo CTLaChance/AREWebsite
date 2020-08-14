@@ -30,9 +30,13 @@
             flex-grow: 1;
             display: flex;
             justify-content: space-evenly;
+            align-items: center;
             
             > * {
                 padding: 10px 15px;
+            }
+            
+            :last-child {
                 border: 2px solid black;
                 border-radius: 20px;
 
@@ -52,8 +56,7 @@
     </div>
 
     <div id="buttons">
-        <div id="about">About</div>
-        <div id="contact">Contact</div>
-        <div id="testimonials">Testimonials</div>
+        <div>About</div>
+        <div>Purchase</div>
     </div>
 </div>
