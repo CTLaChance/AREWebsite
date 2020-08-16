@@ -27,8 +27,10 @@
                 font-family: 'Montserrat';
 
                 display: flex;
-                justify-content: center;
+                justify-content: flex-end;
                 align-items: center;
+
+                padding-right: 10px;
             }
 
             #footer-links {

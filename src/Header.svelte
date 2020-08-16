@@ -3,11 +3,12 @@
 
 <style lang="scss">
     #header {
+        width: 70%;
+        margin: auto;
+        padding: 25px 0px;
+        
         display: flex;
         justify-content: center;
-        width: 70%;
-        height: 150px;
-        margin: auto;
         align-items: center;
 
         img {
