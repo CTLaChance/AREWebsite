@@ -5,20 +5,39 @@
     #footer {
         padding: 25px 15%;
         background-color: #fafafa;
+        
+        font-family: 'Roboto';
+        font-size: 14px;
+        line-height: 20px;
 
         #footer-main {
-            font-family: 'Montserrat';
+            font-family: 'Roboto';
             color: #bbbbbb;
 
             padding: 25px 0px;
 
             display: flex;
-            justify-content: left;
+            justify-content: center;
+
+            > * {
+                width: 50%;
+            }
+
+            #footer-company {
+                font-family: 'Montserrat';
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
 
             #footer-links {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+
+                border-left: 2px solid;
+                padding-left: 10px;
 
                 > *:hover {
                     color: black;
@@ -28,14 +47,14 @@
 
         #footer-lower {
             color: #bbbbbb;
-            border-top: 2px solid;
-            font-family: monospace;
             font-size: 16px;
+            font-family: monospace;
 
             display: flex;
             justify-content: space-between;
 
             padding: 25px 0px;
+            border-top: 2px solid;
 
             a {
                 background: linear-gradient(to right, hsl(0, 100%, 50%), hsl(30, 100%, 50%), hsl(60, 100%, 50%), hsl(90, 100%, 50%), hsl(120, 100%, 50%), hsl(150, 100%, 50%), hsl(180, 100%, 50%), hsl(210, 100%, 50%), hsl(240, 100%, 50%), hsl(270, 100%, 50%), hsl(300, 100%, 50%), hsl(330, 100%, 50%), hsl(360, 100%, 50%));
@@ -60,7 +79,11 @@
 
 <div id="footer">
     <div id="footer-main">
-        <img src="./favicon.png" alt="Company Logo" width="128px">
+        <div id="footer-company">
+            <img src="./favicon.png" alt="Company Logo" width="64px">
+            <h4>Algebra Readiness Educators</h4>
+        </div>
+
         <div id="footer-links">
             <div>About</div>
             <div>Contact</div>
