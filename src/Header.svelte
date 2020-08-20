@@ -4,9 +4,13 @@
 <style lang="scss">
     #header {
         width: 70%;
-        margin: auto;
+        margin: 0px auto;
         padding: 25px 0px;
         
+        // Don't shrink the header whe main content changes.
+        // Used in creating a sticky footer.
+        flex-shrink: 0;
+
         display: flex;
         justify-content: center;
         align-items: center;

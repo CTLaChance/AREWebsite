@@ -10,6 +10,8 @@
         font-size: 14px;
         line-height: 20px;
 
+        flex-shrink: 0;
+
         #footer-main {
             font-family: 'Roboto';
             color: #bbbbbb;
