@@ -18,7 +18,7 @@
 
 <style lang="scss">
     #details {
-        width: 70%;
+        width: 60%;
         margin: auto;
         
         display: flex;
@@ -38,30 +38,30 @@
             flex-direction: column;
 
             h2 {
-                font-size: 24px;
+                font-size: 30px;
+                margin: 0;
             }
 
-            #details-main {
-                #details-buttons {
-                    display: flex;
-                    align-items: center;
-    
-                    > * {
-                        color: black;
-                        background: white;
-                        border: 2px black solid;
-                        border-radius: 25px;
-                        
-                        padding: 10px 25px;
-                        margin: 0;
-    
-                        transition: all .05s 0s linear;
-    
-                        &:hover {
-                            cursor: pointer;
-                            color: white;
-                            background: black;
-                        }
+            i {
+                margin: 16px 0px;
+            }
+
+            #details-buttons {
+                button {
+                    color: black;
+                    background: white;
+                    border: 2px black solid;
+                    border-radius: 25px;
+                    
+                    padding: 10px 25px;
+                    margin: 0 10px 0 0;
+
+                    transition: all .05s 0s linear;
+
+                    &:hover {
+                        cursor: pointer;
+                        color: white;
+                        background: black;
                     }
                 }
             }
@@ -95,18 +95,13 @@
     <div id="details">
         <img id="details-cover" src={products[details_index].image} alt={`${products[details_index].name} Cover`}>
         <div id="details-text">
-            <div id="details-main">
-                <h2>{products[details_index].name}</h2>
-                <p>{products[details_index].summary}</p>
-                <div id="details-buttons">
-                    <button>Buy</button>
-                    <button>Sample</button>
-                </div>
+            <h2>{products[details_index].name}</h2>
+            <p>{products[details_index].summary}</p>
+            <div id="details-buttons">
+                <button>Buy</button>
+                <button>Sample</button>
             </div>
-            <div id="details-footer">
-                <i>Note: For large orders we recommend creating a purchase order by contacting us.</i>
-                <button>Contact Us</button>
-            </div>
+            <i>Note: For large orders we recommend creating a purchase order by contacting us.</i>
         </div>
     </div>
 {:else}
