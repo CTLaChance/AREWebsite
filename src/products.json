@@ -1,0 +1,12 @@
+[
+  {
+    "name": "3rd Grade",
+    "image": "./covers/grade3_cover.jpg",
+    "summary": "This is the summary for the 3rd grade book."
+  },
+  {
+    "name": "4th Grade",
+    "image": "./covers/grade4_cover.jpg",
+    "summary": "This is the summary for the 4th grade book."
+  }
+]

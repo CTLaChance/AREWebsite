@@ -1,7 +1,27 @@
 <script>
+    import products from './products.json';
+
+    // Details View //
+    let details_open = false;
+    let details_index = null;
+
+    function openDetails(product) {
+        details_open = true;
+        details_index = product;
+    }
+
+    function closeDetails() {
+        details_open = false;
+        details_index = null;
+    }
 </script>
 
 <style lang="scss">
+    #details {
+        width: 70%;
+        margin: auto;
+    }
+
     #grid {
         width: 60%;
         margin: 25px auto;
@@ -15,21 +35,27 @@
             width: 100%;
             height: auto;
 
+            transition: transform .2s 0s ease-in-out;
+
             &:hover {
-                filter: grayscale(1);
+                transform: scale(1.1, 1.1);
+                cursor: pointer;
             }
         }
     }
 </style>
 
-<div id="grid">
-    <img src="./covers/grade3_cover.jpg" alt="Grade 3 Cover">
-    <img src="./covers/grade4_cover.jpg" alt="Grade 4 Cover">
-    <img src="./covers/grade5_cover.jpg" alt="Grade 5 Cover">
-    <img src="./covers/grade6_cover.jpg" alt="Grade 6 Cover">
-    <img src="./covers/grade7_cover.jpg" alt="Grade 7 Cover">
-    <img src="./covers/prealgebra_cover.jpg" alt="Pre Algebra Cover">
-    <img src="./covers/algebra1_cover.jpg" alt="Algebra 1 Cover">
-    <img src="./covers/geometry_cover.jpg" alt="Geometry Cover Cover">
-    <img src="./covers/algebra2_cover.jpg" alt="Algebra 2 Cover">
-</div>
+{#if details_open}
+    <div id="details">
+        <img src={products[details_index].image} alt={`${products[details_index].name} Cover`}>
+        <div id="summary">
+            {products[details_index].summary}
+        </div>
+    </div>
+{:else}
+    <div id="grid">
+        {#each products as product, index}
+            <img src={product.image} alt={`${product.name} Cover`} on:click={() => openDetails(index)}>
+        {/each}
+    </div>
+{/if}
