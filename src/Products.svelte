@@ -2,8 +2,8 @@
     import products from './products.json';
 
     // Details View //
-    let details_open = false;
-    let details_index = null;
+    let details_open = true;
+    let details_index = 0;
 
     function openDetails(product) {
         details_open = true;
@@ -20,6 +20,52 @@
     #details {
         width: 70%;
         margin: auto;
+        
+        display: flex;
+        align-items: center;
+
+        font-family: 'Roboto';
+
+        img {
+            width: 35%;
+            margin-right: 25px;
+        }
+
+        #details-text {
+            flex-grow: 1;
+
+            display: flex;
+            flex-direction: column;
+
+            h2 {
+                font-size: 24px;
+            }
+
+            #details-main {
+                #details-buttons {
+                    display: flex;
+                    align-items: center;
+    
+                    > * {
+                        color: black;
+                        background: white;
+                        border: 2px black solid;
+                        border-radius: 25px;
+                        
+                        padding: 10px 25px;
+                        margin: 0;
+    
+                        transition: all .05s 0s linear;
+    
+                        &:hover {
+                            cursor: pointer;
+                            color: white;
+                            background: black;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     #grid {
@@ -47,9 +93,20 @@
 
 {#if details_open}
     <div id="details">
-        <img src={products[details_index].image} alt={`${products[details_index].name} Cover`}>
-        <div id="summary">
-            {products[details_index].summary}
+        <img id="details-cover" src={products[details_index].image} alt={`${products[details_index].name} Cover`}>
+        <div id="details-text">
+            <div id="details-main">
+                <h2>{products[details_index].name}</h2>
+                <p>{products[details_index].summary}</p>
+                <div id="details-buttons">
+                    <button>Buy</button>
+                    <button>Sample</button>
+                </div>
+            </div>
+            <div id="details-footer">
+                <i>Note: For large orders we recommend creating a purchase order by contacting us.</i>
+                <button>Contact Us</button>
+            </div>
         </div>
     </div>
 {:else}
