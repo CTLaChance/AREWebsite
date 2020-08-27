@@ -8,5 +8,40 @@
     "name": "4th Grade",
     "image": "./covers/grade4_cover.jpg",
     "summary": "This is the summary for the 4th grade book."
+  },
+  {
+    "name": "5th Grade",
+    "image": "./covers/grade5_cover.jpg",
+    "summary": "This is the summary for the 5th grade book."
+  },
+  {
+    "name": "6th Grade",
+    "image": "./covers/grade6_cover.jpg",
+    "summary": "This is the summary for the 6th grade book."
+  },
+  {
+    "name": "7th Grade",
+    "image": "./covers/grade7_cover.jpg",
+    "summary": "This is the summary for the 7th grade book."
+  },
+  {
+    "name": "Pre Algebra",
+    "image": "./covers/prealgebra_cover.jpg",
+    "summary": "This is the summary for the Pre Algebra book."
+  },
+  {
+    "name": "Algebra",
+    "image": "./covers/algebra1_cover.jpg",
+    "summary": "This is the summary for the Algebra 1 book."
+  },
+  {
+    "name": "Geometry",
+    "image": "./covers/geometry_cover.jpg",
+    "summary": "This is the summary for the Geometry book."
+  },
+  {
+    "name": "Algebra 2",
+    "image": "./covers/algebra2_cover.jpg",
+    "summary": "This is the summary for the Algebra 2 book."
   }
 ]

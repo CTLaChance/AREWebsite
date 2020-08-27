@@ -2,7 +2,7 @@
     import products from './products.json';
 
     // Details View //
-    let details_open = true;
+    let details_open = false;
     let details_index = 0;
 
     function openDetails(product) {
