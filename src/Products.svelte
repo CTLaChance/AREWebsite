@@ -2,7 +2,7 @@
     import products from './products.json';
 
     // Details View //
-    let details_open = false;
+    let details_open = true;
     let details_index = 0;
 
     function openDetails(product) {
@@ -18,35 +18,62 @@
 
 <style lang="scss">
     #details {
-        width: 60%;
-        margin: auto;
-        
+        height: 100%;
         display: flex;
+        justify-content: left;
         align-items: center;
 
-        font-family: 'Roboto';
+        #details-return-arrow {
+            width: 15%;
+            height: fit-content;
 
-        img {
-            width: 35%;
-            margin-right: 25px;
+            cursor: pointer;
+
+            img {
+                width: 128px;
+                height: 128px;
+                display: block;
+                margin: auto;
+
+                transition: transform .25s 0s ease-in-out;
+            }
+
+            &:hover {
+                // Moving the inner img element prevents fringe bouncing.
+                img {
+                    transform: translate(-25%, 0%);
+                }
+            }
         }
 
-        #details-text {
-            flex-grow: 1;
-
+        #details-content{
             display: flex;
-            flex-direction: column;
+            align-items: center;
+            width: 70%;
+            height: 100%;
+            margin: auto auto auto 0;
 
-            h2 {
-                font-size: 30px;
-                margin: 0;
+            font-family: 'Roboto';
+
+            #details-cover {
+                flex-basis: 35%;
+                width: 35%;
+                margin-right: 25px;
             }
 
-            i {
-                margin: 16px 0px;
-            }
+            #details-text {
+                display: flex;
+                flex-direction: column;
 
-            #details-buttons {
+                h2 {
+                    font-size: 30px;
+                    margin: 0;
+                }
+
+                i {
+                    margin: 16px 0px;
+                }
+
                 button {
                     color: black;
                     background: white;
@@ -93,21 +120,29 @@
 
 {#if details_open}
     <div id="details">
-        <img id="details-cover" src={products[details_index].image} alt={`${products[details_index].name} Cover`}>
-        <div id="details-text">
-            <h2>{products[details_index].name}</h2>
-            <p>{products[details_index].summary}</p>
-            <div id="details-buttons">
-                <button>Buy</button>
-                <button>Sample</button>
+        <div id="details-return-arrow">
+            <img src="back_arrow.svg" alt="Return to the product grid." on:click={() => closeDetails()}>
+        </div>
+        <div id="details-content">
+            <img id="details-cover" src={products[details_index].cover} alt={`${products[details_index].name} Cover`}>
+            <div id="details-text">
+                <h2>{products[details_index].name}</h2>
+                <p>{products[details_index].summary}</p>
+                <div>
+                    <button>Buy</button>
+                    <button>Sample</button>
+                </div>
+                <i>Note: For large orders we recommend creating a purchase order by contacting us.</i>
+                {#if products[details_index].spanish_cover}
+                    <button>View Spanish Edition</button>
+                {/if}
             </div>
-            <i>Note: For large orders we recommend creating a purchase order by contacting us.</i>
         </div>
     </div>
 {:else}
     <div id="grid">
         {#each products as product, index}
-            <img src={product.image} alt={`${product.name} Cover`} on:click={() => openDetails(index)}>
+            <img src={product.cover} alt={`${product.name} Cover`} on:click={() => openDetails(index)}>
         {/each}
     </div>
 {/if}
