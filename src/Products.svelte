@@ -2,7 +2,7 @@
     import products from './products.json';
 
     // Details View //
-    let details_open = true;
+    let details_open = false;
     let details_index = 0;
 
     function openDetails(product) {
@@ -120,6 +120,20 @@
     }
 
     #grid {
+        // Animation styling.
+        @keyframes grid-opacity {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        // animation: grid-opacity 0.75s 0.25s both ease-in-out;
+
+        // Grid styling.
         width: 60%;
         margin: 25px auto;
 
