@@ -18,6 +18,30 @@
 
 <style lang="scss">
     #details {
+        // Animation styling.
+        @keyframes details-slide {
+            0% {
+                transform: translate(15%, 0%);
+            }
+
+            100% {
+                transform: translate(0%, 0%);
+            }
+        }
+
+        @keyframes details-opacity {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        animation: details-slide 1s .25s cubic-bezier(.61,.02,.24,.98) both, details-opacity .75s .25s ease-in-out both;
+
+        // Details styling.
         height: 100%;
         display: flex;
         justify-content: left;

@@ -11,9 +11,13 @@ body {
     box-sizing: border-box;
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 
+    /* Used to ensure the header and footer are at the top and bototm of the page respectively. */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    /* Hides the horizontal scroll bar when sliding content in from the sides.*/
+    overflow-x: hidden;
 }
 
 a {
