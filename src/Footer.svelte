@@ -43,6 +43,8 @@
                 border-left: 2px solid;
                 padding-left: 10px;
 
+                cursor: pointer;
+
                 > *:hover {
                     color: black;
                 }

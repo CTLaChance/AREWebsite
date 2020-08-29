@@ -131,7 +131,7 @@
             }
         }
 
-        // animation: grid-opacity 0.75s 0.25s both ease-in-out;
+        animation: grid-opacity 0.75s 0.25s both ease-in-out;
 
         // Grid styling.
         width: 60%;
