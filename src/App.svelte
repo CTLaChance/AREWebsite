@@ -9,7 +9,7 @@
     import Testimonials from './Testimonials.svelte';
 
     let about_visible = false;
-    let contact_visible = true;
+    let contact_visible = false;
     let testimonials_visible = false;
 
     function openView(event) {

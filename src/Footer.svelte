@@ -8,6 +8,7 @@
 <style lang="scss">
     #footer {
         padding: 25px 15%;
+        margin-top: 25px;
         background-color: #fafafa;
         
         font-size: 14px;

@@ -22,13 +22,25 @@
             border-left: 1px solid #bbbbbb;
             padding-left: 15px;
 
-            * > {
-                border: none;
+            input, textarea {
+                padding: 10px 10px;
+                margin: 0 0 10px 0;
             }
 
-            div {
-                * > {
-                    margin-right: 25px;
+            textarea::placeholder {
+                font-family: 'Roboto';
+            }
+
+            #form-sender {
+                display: flex;
+
+                :first-child {
+                    width: 40%;
+                    margin-right: 10px;
+                }
+
+                :last-child {
+                    width: 60%;
                 }
             }
         }
@@ -43,13 +55,13 @@
     </div>
 
     <form>
-        <div>
+        <div id="form-sender">
             <input type="text" id="name" placeholder="Name">
             <input type="email" id="email" placeholder="Email">
         </div>
 
         <input placeholder="Subject">
-        <textarea placeholder="Compose your email here." rows="15"></textarea>
-        <button>SEND</button>
+        <textarea rows="15"></textarea>
+        <button class="button">SEND</button>
     </form>
 </div>

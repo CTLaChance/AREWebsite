@@ -105,26 +105,6 @@
 
                 #details-buttons {
                     display: flex;
-
-                    a, div{
-                        color: black;
-                        background: white;
-                        border: 2px black solid;
-                        border-radius: 25px;
-                        padding: 10px 50px;
-
-                        margin: 0 10px 0 0;
-
-                        transition: all .05s 0s linear;
-
-                        text-decoration: none;
-
-                        &:hover {
-                            cursor: pointer;
-                            color: white;
-                            background: black;
-                        }
-                    }
                 }
             }
         }
@@ -178,10 +158,10 @@
                 <h2>{products[details_index].name}</h2>
                 <p>{products[details_index].summary}</p>
                 <div id="details-buttons">
-                    <a href={products[details_index].link} target="_blank">Buy</a>
-                    <a href={products[details_index].sample} target="_blank">Sample</a>
+                    <a href={products[details_index].link} target="_blank" class="button">Buy</a>
+                    <a href={products[details_index].sample} target="_blank" class="button">Sample</a>
                     {#if products[details_index].spanish_cover}
-                        <div on:click={() => toggleSpanishEdition()}>View Spanish Edition</div>
+                        <div on:click={() => toggleSpanishEdition()} class="button">View Spanish Edition</div>
                     {/if}
                 </div>
                 <i>Note: For large orders we recommend creating a purchase order by <a href="#contact">contacting us.</a></i>
