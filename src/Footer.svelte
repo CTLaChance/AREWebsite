@@ -10,14 +10,12 @@
         padding: 25px 15%;
         background-color: #fafafa;
         
-        font-family: 'Roboto';
         font-size: 14px;
         line-height: 20px;
 
         flex-shrink: 0;
 
         #footer-main {
-            font-family: 'Roboto';
             color: #bbbbbb;
 
             padding: 25px 0px;

@@ -15,6 +15,8 @@
         justify-content: center;
         align-items: center;
 
+        font-family: 'Montserrat';
+
         img {
             height: 128px;
             width:  128px;

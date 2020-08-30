@@ -84,8 +84,6 @@
             height: 100%;
             margin: auto auto auto 0;
 
-            font-family: 'Roboto';
-
             #details-cover {
                 flex-basis: 35%;
                 width: 35%;
