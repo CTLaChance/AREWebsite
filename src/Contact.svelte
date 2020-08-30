@@ -27,8 +27,34 @@
                 margin: 0 0 10px 0;
             }
 
+            textarea {
+                resize: none;
+            }
+
             textarea::placeholder {
                 font-family: 'Roboto';
+            }
+
+            button {
+                width: 25%;
+                margin: auto;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                font-weight: 900;
+
+                img {
+                    vertical-align: middle;
+                    margin-left: 10px;
+                }
+
+                &:hover {
+                    img {
+                        filter: invert(100%);
+                    }
+                }
             }
 
             #form-sender {
@@ -62,6 +88,6 @@
 
         <input placeholder="Subject">
         <textarea rows="15"></textarea>
-        <button class="button">SEND</button>
+        <button class="button">SEND<img src="send.svg" height="20px" weight="20px"></button>
     </form>
 </div>
