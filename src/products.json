@@ -3,6 +3,7 @@
     "name": "3rd Grade",
     "cover": "./covers/grade3_cover.jpg",
     "summary": "This is the summary for the 3rd grade book. It's long enough that it can be broken into multiple lines, but it's not so long that it overflows the page. You too can write summaries of this caliber just by pulling them out of your butt! Don't hesitate! Call now! Let's push this little paragraph a smidge further into three lines territory!",
+    "link": "http://amzn.to/2H5P1zH",
     "spanish_cover": "./covers/grade3_spanish_cover.jpg",
     "spanish_summary": "This is the Spanish summary for the 3rd grade book."
   },

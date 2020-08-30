@@ -2,8 +2,10 @@
     import products from './products.json';
 
     // Details View //
-    let details_open = false;
+    let details_open = true;
     let details_index = 0;
+
+    let spanish_edition = false;
 
     function openDetails(product) {
         details_open = true;
@@ -12,7 +14,12 @@
 
     function closeDetails() {
         details_open = false;
+        spanish_edition = false;
         details_index = null;
+    }
+
+    function toggleSpanishEdition() {
+        spanish_edition = !spanish_edition;
     }
 </script>
 
@@ -98,21 +105,27 @@
                     margin: 16px 0px;
                 }
 
-                button {
-                    color: black;
-                    background: white;
-                    border: 2px black solid;
-                    border-radius: 25px;
-                    
-                    padding: 10px 25px;
-                    margin: 0 10px 0 0;
+                #details-buttons {
+                    display: flex;
 
-                    transition: all .05s 0s linear;
+                    a, div{
+                        color: black;
+                        background: white;
+                        border: 2px black solid;
+                        border-radius: 25px;
+                        padding: 10px 50px;
 
-                    &:hover {
-                        cursor: pointer;
-                        color: white;
-                        background: black;
+                        margin: 0 10px 0 0;
+
+                        transition: all .05s 0s linear;
+
+                        text-decoration: none;
+
+                        &:hover {
+                            cursor: pointer;
+                            color: white;
+                            background: black;
+                        }
                     }
                 }
             }
@@ -166,14 +179,14 @@
             <div id="details-text">
                 <h2>{products[details_index].name}</h2>
                 <p>{products[details_index].summary}</p>
-                <div>
-                    <button>Buy</button>
-                    <button>Sample</button>
+                <div id="details-buttons">
+                    <a href={products[details_index].link} target="_blank">Buy</a>
+                    <a href={products[details_index].sample} target="_blank">Sample</a>
+                    {#if products[details_index].spanish_cover}
+                        <div on:click={() => toggleSpanishEdition()}>View Spanish Edition</div>
+                    {/if}
                 </div>
-                <i>Note: For large orders we recommend creating a purchase order by contacting us.</i>
-                {#if products[details_index].spanish_cover}
-                    <button>View Spanish Edition</button>
-                {/if}
+                <i>Note: For large orders we recommend creating a purchase order by <a href="#contact">contacting us.</a></i>
             </div>
         </div>
     </div>
