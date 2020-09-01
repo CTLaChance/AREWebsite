@@ -37,10 +37,9 @@
 
             button {
                 width: 25%;
-                margin: auto;
+                // margin: auto;
 
                 display: flex;
-                align-items: center;
                 justify-content: center;
 
                 font-weight: 900;

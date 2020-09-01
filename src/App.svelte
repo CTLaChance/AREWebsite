@@ -16,12 +16,10 @@
 <Header />
 
 <Router url="{url}">
-    <nav>
-        <Link to="contact">Contact</Link>
-    </nav>
-    <div>
-        <Route path="contact" component="{Contact}" />
-    </div>
+    <Route path="/" component="{Products}" />
+    <Route path="contact" component="{Contact}" />
+    <Route path="about" component="{About}" />
+    <Route path="testimonials" component="{Testimonials}" />
 </Router>
 
 <Footer />
