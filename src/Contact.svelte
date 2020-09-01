@@ -25,24 +25,26 @@
             input, textarea {
                 padding: 10px 10px;
                 margin: 0 0 10px 0;
-            }
+                border-radius: 5px;
+                border: 1px solid #bbbbbb;
 
-            textarea {
+                font-family: 'Roboto';
+
+                outline: none;
                 resize: none;
             }
 
-            textarea::placeholder {
-                font-family: 'Roboto';
-            }
-
             button {
-                width: 25%;
+                width: 45%;
                 // margin: auto;
 
                 display: flex;
                 justify-content: center;
+                align-items: center;
 
                 font-weight: 900;
+
+                border-radius: 5px;
 
                 img {
                     vertical-align: middle;
