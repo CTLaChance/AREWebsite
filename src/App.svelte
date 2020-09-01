@@ -13,13 +13,11 @@
     export let url = "";
 </script>
 
-<Header />
-
 <Router url="{url}">
+    <Header />
     <Route path="/" component="{Products}" />
     <Route path="contact" component="{Contact}" />
     <Route path="about" component="{About}" />
     <Route path="testimonials" component="{Testimonials}" />
+    <Footer />
 </Router>
-
-<Footer />

@@ -1,6 +1,8 @@
 <script>
     import {createEventDispatcher} from 'svelte';
     const dispatch = createEventDispatcher();
+
+    import {Link} from 'svelte-routing';
 </script>
 
 <style lang="scss">
@@ -45,10 +47,6 @@
                 padding-left: 10px;
 
                 cursor: pointer;
-
-                > *:hover {
-                    color: black;
-                }
             }
         }
 
@@ -92,9 +90,9 @@
         </div>
 
         <div id="footer-links">
-            <div>About</div>
-            <div>Contact</div>
-            <div>Testimonials</div>
+            <Link to="about">About</Link>
+            <Link to="contact">Contact</Link>
+            <Link to="testimonials">Testimonials</Link>
         </div>
     </div>
 

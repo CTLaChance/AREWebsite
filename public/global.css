@@ -38,3 +38,12 @@ body {
     color: white;
     background: black;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: black;
+}
