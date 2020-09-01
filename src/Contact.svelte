@@ -88,6 +88,6 @@
 
         <input placeholder="Subject">
         <textarea rows="15"></textarea>
-        <button class="button">SEND<img src="send.svg" height="20px" weight="20px"></button>
+        <button class="button">SEND<img src="send.svg" height="20px" weight="20px" alt="Send Icon"></button>
     </form>
 </div>

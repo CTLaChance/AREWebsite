@@ -1,4 +1,6 @@
 <script>
+    import {Router, Route, Link} from 'svelte-routing';
+
     import Header from './Header.svelte';
     import Footer from './Footer.svelte';
 
@@ -8,39 +10,18 @@
     import Contact from './Contact.svelte';
     import Testimonials from './Testimonials.svelte';
 
-    let about_visible = false;
-    let contact_visible = true;
-    let testimonials_visible = false;
-
-    function openView(event) {
-        console.log(`Event: ${event.detail.view}`)
-
-        about_visible = false;
-        contact_visible = false;
-        testimonials_visible = false;
-
-        switch(event.detail.view) {
-            case 'About':
-                about_visible = true;
-                break;
-            case 'Contact':
-                contact_visible = true;
-                break;
-            case 'Testimonials':
-                testimonials_visible = true;
-                break;
-        }
-    }
+    export let url = "";
 </script>
 
 <Header />
-{#if about_visible}
-    <About />
-{:else if contact_visible}
-    <Contact />
-{:else if testimonials_visible}
-    <Testimonials />
-{:else}
-    <Products />
-{/if}
-<Footer on:openView={openView} on:/>
+
+<Router url="{url}">
+    <nav>
+        <Link to="contact">Contact</Link>
+    </nav>
+    <div>
+        <Route path="contact" component="{Contact}" />
+    </div>
+</Router>
+
+<Footer />

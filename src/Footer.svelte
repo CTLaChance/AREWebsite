@@ -1,8 +1,6 @@
 <script>
     import {createEventDispatcher} from 'svelte';
     const dispatch = createEventDispatcher();
-
-
 </script>
 
 <style lang="scss">
@@ -94,9 +92,9 @@
         </div>
 
         <div id="footer-links">
-            <div on:click={() => dispatch('openView', {view: "About"})}>About</div>
-            <div on:click={() => dispatch('openView', {view: "Contact"})}>Contact</div>
-            <div on:click={() => dispatch('openView', {view: "Testimonials"})}>Testimonials</div>
+            <div>About</div>
+            <div>Contact</div>
+            <div>Testimonials</div>
         </div>
     </div>
 

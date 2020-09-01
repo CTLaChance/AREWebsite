@@ -30,7 +30,7 @@ module.exports = {
           options: {
             emitCss: true,
             hotReload: true,
-            preprocess: sveltePreprocess({})
+            preprocess: sveltePreprocess({}),
           },
         },
       },
@@ -54,4 +54,9 @@ module.exports = {
     }),
   ],
   devtool: prod ? false : "source-map",
+  devServer: {
+    historyApiFallback: {
+      index: "index.html",
+    },
+  },
 };
