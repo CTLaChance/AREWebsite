@@ -12,6 +12,10 @@
             h1 {
                 margin-top: 0;
             }
+
+            h3 {
+                font-weight: 400;
+            }
         }
 
         form {
@@ -35,7 +39,7 @@
             }
 
             button {
-                width: 45%;
+                width: 40%;
                 // margin: auto;
 
                 display: flex;
@@ -76,7 +80,7 @@
 
 <div id="contact">
     <div id="contact-left">
-        <h1>Contact Us</h1>
+        <h1>CONTACT US</h1>
         <h3>Want to buy in bulk? Just want to say hello? <br> Send us an email and we'll get back to you soon.</h3>
         <a href="https://www.facebook.com/AlgebraReadinessEducatorsLLC/" target="_blank" width="24px" height="24px"><img src="facebook_icon.svg" alt="Facebook"></a>
     </div>
