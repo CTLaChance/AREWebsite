@@ -1,6 +1,6 @@
 [
   {
-    "name": "3rd Grade",
+    "name": "3rd_grade",
     "cover": "./covers/grade3_cover.jpg",
     "summary": "This is the summary for the 3rd grade book. It's long enough that it can be broken into multiple lines, but it's not so long that it overflows the page. You too can write summaries of this caliber just by pulling them out of your butt! Don't hesitate! Call now! Let's push this little paragraph a smidge further into three lines territory!",
     "link": "http://amzn.to/2H5P1zH",
@@ -8,42 +8,42 @@
     "spanish_summary": "This is the Spanish summary for the 3rd grade book."
   },
   {
-    "name": "4th Grade",
+    "name": "4th_grade",
     "cover": "./covers/grade4_cover.jpg",
     "summary": "This is the summary for the 4th grade book."
   },
   {
-    "name": "5th Grade",
+    "name": "5th_grade",
     "cover": "./covers/grade5_cover.jpg",
     "summary": "This is the summary for the 5th grade book."
   },
   {
-    "name": "6th Grade",
+    "name": "6th_grade",
     "cover": "./covers/grade6_cover.jpg",
     "summary": "This is the summary for the 6th grade book."
   },
   {
-    "name": "7th Grade",
+    "name": "7th_grade",
     "cover": "./covers/grade7_cover.jpg",
     "summary": "This is the summary for the 7th grade book."
   },
   {
-    "name": "Pre Algebra",
+    "name": "pre_algebra",
     "cover": "./covers/prealgebra_cover.jpg",
     "summary": "This is the summary for the Pre Algebra book."
   },
   {
-    "name": "Algebra",
+    "name": "algebra",
     "cover": "./covers/algebra1_cover.jpg",
     "summary": "This is the summary for the Algebra 1 book."
   },
   {
-    "name": "Geometry",
+    "name": "geometry",
     "cover": "./covers/geometry_cover.jpg",
     "summary": "This is the summary for the Geometry book."
   },
   {
-    "name": "Algebra 2",
+    "name": "algebra_2",
     "cover": "./covers/algebra2_cover.jpg",
     "summary": "This is the summary for the Algebra 2 book."
   }
