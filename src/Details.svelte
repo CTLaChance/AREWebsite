@@ -1,7 +1,7 @@
 <script>
-    import {Link} from 'svelte-routing';
     import products from './products.json';
-    
+    import ReturnArrow from './ReturnArrow.svelte';
+
     export let index = 0;
 </script>
 
@@ -35,29 +35,6 @@
         display: flex;
         justify-content: left;
         align-items: center;
-
-        #details-return-arrow {
-            width: 15%;
-            height: fit-content;
-
-            cursor: pointer;
-
-            img {
-                width: 128px;
-                height: 128px;
-                display: block;
-                margin: auto;
-
-                transition: transform .25s 0s ease-in-out;
-            }
-
-            &:hover {
-                // Moving the inner img element prevents fringe bouncing.
-                img {
-                    transform: translate(-25%, 0%);
-                }
-            }
-        }
 
         #details-content{
             display: flex;
@@ -94,8 +71,7 @@
 </style>
 
 <div id="details">
-    <div id="details-return-arrow"><Link to="/"><img src="back_arrow.svg" alt="Return to the product grid."></Link></div>
-
+    <ReturnArrow />
     <div id="details-content">
         <img id="details-cover" src={products[index].cover} alt={`${products[index].name} Cover`}>
         <div id="details-text">
