@@ -76,28 +76,7 @@
             }
         }
 
-        // Animation styling.
-        @keyframes contact-slide {
-            0% {
-                transform: translate(15%, 0%);
-            }
-
-            100% {
-                transform: translate(0%, 0%);
-            }
-        }
-
-        @keyframes contact-opacity {
-            0% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-
-        animation: contact-slide 1s .25s cubic-bezier(.61,.02,.24,.98) both, contact-opacity .75s .25s ease-in-out both;
+        animation: component-load 1s .25s cubic-bezier(.61,.02,.24,.98) both;
     }
 </style>
 

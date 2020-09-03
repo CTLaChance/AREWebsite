@@ -28,7 +28,7 @@
             }
         }
 
-        animation: details-slide 1s .25s cubic-bezier(.61,.02,.24,.98) both, details-opacity .75s .25s ease-in-out both;
+        animation: component-load 1s .25s cubic-bezier(.61,.02,.24,.98) both;
 
         // Details styling.
         height: 100%;
