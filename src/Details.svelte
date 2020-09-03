@@ -99,7 +99,7 @@
     <div id="details-content">
         <img id="details-cover" src={products[index].cover} alt={`${products[index].name} Cover`}>
         <div id="details-text">
-            <h2>{products[index].name}</h2>
+            <h2>{products[index].name.replace("_"," ")}</h2>
             <p>{products[index].summary}</p>
             <div id="details-buttons">
                 <a href={products[index].link} target="_blank" class="button">Buy</a>
