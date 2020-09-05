@@ -10,9 +10,10 @@
         height: 100%;
 
         #contact-content {
-            display: flex;
             width: 70%;
             margin: auto auto auto 0;
+
+            display: flex;
 
             #contact-left {
                 width: 40%;
