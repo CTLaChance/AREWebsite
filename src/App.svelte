@@ -10,6 +10,7 @@
     import About from './About.svelte';
     import Contact from './Contact.svelte';
     import Testimonials from './Testimonials.svelte';
+    import Licensing from './Licensing.svelte';
     import Details from './Details.svelte';
 
     export let url = "";
@@ -22,6 +23,7 @@
     <Route path="contact" component="{Contact}" />
     <Route path="about" component="{About}" />
     <Route path="testimonials" component="{Testimonials}" />
+    <Route path="licensing" component="{Licensing}" />
 
     <!--Product Routes-->
     {#each products as product, index}

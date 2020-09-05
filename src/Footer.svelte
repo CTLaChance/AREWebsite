@@ -93,6 +93,7 @@
             <Link to="about">About</Link>
             <Link to="contact">Contact</Link>
             <Link to="testimonials">Testimonials</Link>
+            <Link to="licensing">Licensing</Link>
         </div>
     </div>
 
