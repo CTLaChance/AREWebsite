@@ -67,7 +67,7 @@
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
 
-                animation: BackgroundScroll 3s linear infinite;
+                animation: BackgroundScroll 10s linear infinite;
 
                 @keyframes BackgroundScroll {
                     0%{background-position:0% 50%}
