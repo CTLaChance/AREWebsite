@@ -62,7 +62,7 @@
             border-top: 2px solid;
 
             a {
-                background: linear-gradient(to right, hsl(0, 100%, 50%), hsl(30, 100%, 50%), hsl(60, 100%, 50%), hsl(90, 100%, 50%), hsl(120, 100%, 50%), hsl(150, 100%, 50%), hsl(180, 100%, 50%), hsl(210, 100%, 50%), hsl(240, 100%, 50%), hsl(270, 100%, 50%), hsl(300, 100%, 50%), hsl(330, 100%, 50%), hsl(360, 100%, 50%));
+                background: linear-gradient(to right, hsl(0, 100%, 45%), hsl(30, 100%, 45%), hsl(50, 100%, 45%), hsl(90, 100%, 45%), hsl(120, 100%, 45%), hsl(150, 100%, 45%), hsl(180, 100%, 45%), hsl(210, 100%, 45%), hsl(240, 100%, 45%), hsl(270, 100%, 45%), hsl(300, 100%, 45%), hsl(330, 100%, 45%), hsl(360, 100%, 45%));
                 background-size: 200% 200%;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
