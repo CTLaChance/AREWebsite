@@ -99,6 +99,6 @@
 
     <div id="footer-lower">
         <div>© 2020 Algebra Readiness Educators, LLC</div>
-        <div>Design work by <a href="https://ctlachance.com">Christopher LaChance</a>.</div>
+        <div>Design work by <a href="https://ctlachance.com" target="_blank">Christopher LaChance</a>.</div>
     </div>
 </div>

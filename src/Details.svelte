@@ -2,6 +2,8 @@
     import products from './products.json';
     import ReturnArrow from './ReturnArrow.svelte';
 
+    import {Link} from 'svelte-routing';
+
     export let index = 0;
 </script>
 
@@ -60,6 +62,10 @@
 
                 i {
                     margin: 16px 0px;
+
+                    span {
+                        text-decoration: underline;
+                    }
                 }
 
                 #details-buttons {
@@ -80,11 +86,8 @@
             <div id="details-buttons">
                 <a href={products[index].link} target="_blank" class="button">Buy</a>
                 <a href={products[index].sample} target="_blank" class="button">Sample</a>
-                {#if products[index].spanish_cover}
-                    <div class="button">View Spanish Edition</div>
-                {/if}
             </div>
-            <i>Note: For large orders we recommend creating a purchase order by <a href="#contact">contacting us.</a></i>
+            <i>Note: For large orders we recommend creating a purchase order by <Link to="contact"><span>contacting us.</span></Link></i>
         </div>
     </div>
 </div>
