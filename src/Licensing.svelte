@@ -15,11 +15,16 @@
             width: 70%;
             margin: auto auto auto 0;
 
+            display: flex;
+            align-items: center;
+
             h1 {
-                margin-top: 0;
+                margin: 0 15px 0 0;
             }
 
             h3 {
+                border-left: 1px solid #bbbbbb;
+                padding-left: 15px;
                 font-weight: 400;
                 text-align: justify;
             }
