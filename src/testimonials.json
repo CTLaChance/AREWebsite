@@ -1,22 +1,22 @@
 [
   {
     "author": "John Doe",
-    "picture": "./guy.jpg",
+    "picture": "./portraits/guy.jpg",
     "testimonial": "This is the first testimonial. This is the greatest math book I've ever used in my entire life. I wouldn't be half the teacher I am today without this fantastic book. BUY IT NOW."
   },
   {
     "author": "John Doe",
-    "picture": "./guy.jpg",
+    "picture": "./portraits/guy.jpg",
     "testimonial": "This is the second testimonial. This is the greatest math book I've ever used in my entire life. I wouldn't be half the teacher I am today without this fantastic book. BUY IT NOW."
   },
   {
     "author": "John Doe",
-    "picture": "./guy.jpg",
+    "picture": "./portraits/guy.jpg",
     "testimonial": "This is the third testimonial. This is the greatest math book I've ever used in my entire life. I wouldn't be half the teacher I am today without this fantastic book. BUY IT NOW."
   },
   {
     "author": "John Doe",
-    "picture": "./guy.jpg",
+    "picture": "./portraits/guy.jpg",
     "testimonial": "This is the fourth testimonial. This is the greatest math book I've ever used in my entire life. I wouldn't be half the teacher I am today without this fantastic book. BUY IT NOW."
   }
 ]
