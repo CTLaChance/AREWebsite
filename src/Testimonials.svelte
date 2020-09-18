@@ -49,14 +49,6 @@
             #testimonials-right {
                 border-left: 1px solid #bbbbbb;
                 padding-left: 15px;
-
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                #testimonials-picture {
-                    margin-right: 15px;
-                }
             }
 
             h1, h3, h4 {
@@ -86,11 +78,8 @@
         </div>
 
         <div id="testimonials-right">
-            <img id="testimonials-picture" src={testimonials[index].picture} alt="Testimonial Giver">
-            <div>
-                <h3>"{testimonials[index].testimonial}"</h3>
-                <h4>- {testimonials[index].author}</h4>
-            </div>
+            <h3>"{testimonials[index].testimonial}"</h3>
+            <h4>- {testimonials[index].author}</h4>
         </div>
     </div>
 </div>
