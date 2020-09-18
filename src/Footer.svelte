@@ -14,91 +14,80 @@
         font-size: 14px;
         line-height: 20px;
 
-        flex-shrink: 0;
+        display: flex;
+        align-items: center;
 
-        #footer-main {
-            color: #bbbbbb;
-
-            padding: 25px 0px;
-
-            display: flex;
-            justify-content: center;
-
-            > * {
-                width: 50%;
-            }
-
+        #footer-left {
+            width: 50%;
+            
             #footer-company {
-                font-family: 'Montserrat';
-
                 display: flex;
-                justify-content: flex-end;
                 align-items: center;
+                justify-content: flex-end;
 
-                padding-right: 10px;
-            }
-
-            #footer-links {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-
-                border-left: 2px solid;
-                padding-left: 10px;
-
-                cursor: pointer;
+                font-family: 'Montserrat';
+                font-size: 16px;
+                padding-right: 32px;
             }
         }
 
-        #footer-lower {
-            color: #bbbbbb;
-            font-size: 16px;
-            font-family: monospace;
-
+        #footer-right {
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
+            justify-content: center;
 
-            padding: 25px 0px;
-            border-top: 2px solid;
+            border-left: 2px solid;
+            padding-left: 32px;
 
-            a {
-                background: linear-gradient(to right, hsl(0, 100%, 45%), hsl(30, 100%, 45%), hsl(50, 100%, 45%), hsl(90, 100%, 45%), hsl(120, 100%, 45%), hsl(150, 100%, 45%), hsl(180, 100%, 45%), hsl(210, 100%, 45%), hsl(240, 100%, 45%), hsl(270, 100%, 45%), hsl(300, 100%, 45%), hsl(330, 100%, 45%), hsl(360, 100%, 45%));
-                background-size: 200% 200%;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
+            color: #bbbbbb;
+            cursor: pointer;
+        }
+    }
 
-                animation: BackgroundScroll 10s linear infinite;
+    #footer-two {
+        background-color: #fafafa;
+        color: #bbbbbb;
+        text-align: center;
+        font-size: 12px;
+        padding: 16px 0px;
 
-                @keyframes BackgroundScroll {
-                    0%{background-position:0% 50%}
-                    100%{background-position:200% 50%}
-                }
+        a {
+            background: linear-gradient(to right, hsl(0, 100%, 45%), hsl(30, 100%, 45%), hsl(50, 100%, 45%), hsl(90, 100%, 45%), hsl(120, 100%, 45%), hsl(150, 100%, 45%), hsl(180, 100%, 45%), hsl(210, 100%, 45%), hsl(240, 100%, 45%), hsl(270, 100%, 45%), hsl(300, 100%, 45%), hsl(330, 100%, 45%), hsl(360, 100%, 45%));
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
 
-                &:hover {
-                    animation-duration: 1s;
-                }
+            animation: BackgroundScroll 10s linear infinite;
+
+            @keyframes BackgroundScroll {
+                0%{background-position:0% 50%}
+                100%{background-position:200% 50%}
+            }
+
+            &:hover {
+                animation-duration: 1s;
             }
         }
     }
 </style>
 
 <div id="footer">
-    <div id="footer-main">
+    <div id="footer-left">
         <div id="footer-company">
             <img src="./favicon.png" alt="Company Logo" width="64px">
-            <h4>Algebra Readiness Educators</h4>
-        </div>
-
-        <div id="footer-links">
-            <Link to="about">About</Link>
-            <Link to="contact">Contact</Link>
-            <Link to="testimonials">Testimonials</Link>
-            <Link to="licensing">Licensing</Link>
+            <h4>ALGEBRA READINESS EDUCATORS</h4>
         </div>
     </div>
 
-    <div id="footer-lower">
-        <div>© 2020 Algebra Readiness Educators, LLC</div>
-        <div>Design work by <a href="https://ctlachance.com" target="_blank">Christopher LaChance</a>.</div>
+    <div id="footer-right">
+        <Link to="about">About</Link>
+        <Link to="contact">Contact</Link>
+        <Link to="testimonials">Testimonials</Link>
+        <Link to="licensing">Licensing</Link>
     </div>
+</div>
+
+<div id="footer-two">
+    <div>© 2020 Algebra Readiness Educators, LLC</div>
+    <div>Design work by <a href="https://ctlachance.com" target="_blank">Christopher LaChance</a>.</div>
 </div>
