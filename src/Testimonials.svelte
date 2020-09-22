@@ -45,17 +45,12 @@
             }
 
             h1{
-                margin: 0 0 8px 0;
-            }
-
-            h2 {
-                margin: 0;
-                padding-bottom: 16px;
                 border-bottom: 1px solid #bbbbbb;
             }
 
-            h2, h3, h4{
+            h3, h4{
                 font-weight: 400;
+                text-align: justify;
             }
         }
     }
@@ -66,9 +61,8 @@
     <div id="testimonials-content">
         <div>
             <h1>TESTIMONIALS</h1>
-            <h2>Here's what others are saying about Algebra Readiness Educators.</h2>
             <h3>"{testimonials[index].testimonial}"</h3>
-            <h4>- {testimonials[index].author}</h4>
+            <h4><i>- {testimonials[index].author}</i></h4>
         </div>
 
         <div id="testimonials-navigation">
