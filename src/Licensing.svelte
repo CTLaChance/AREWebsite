@@ -10,21 +10,17 @@
         height: 100%;
 
         animation: component-load 1s .25s cubic-bezier(.61,.02,.24,.98) both;
-
+        
         #licensing-content {
-            width: 70%;
-            margin: auto auto auto 0;
-
-            display: flex;
-            align-items: center;
+            $width: 50%;
+            width: $width;
+            margin: auto auto auto #{(35% - ($width / 2))};
 
             h1 {
-                margin: 0 15px 0 0;
+                border-bottom: 1px solid #bbbbbb;
             }
 
             h3 {
-                border-left: 1px solid #bbbbbb;
-                padding-left: 15px;
                 font-weight: 400;
                 text-align: justify;
             }

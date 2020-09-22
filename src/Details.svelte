@@ -84,7 +84,7 @@
         <div id="details-text">
             <h2>{products[index].name.replace("_"," ")}</h2>
             <p>Algebra Readiness Builders are designed to enhance the math skills of your students by introducing and honing a concept through repeition and at home practice. Each book contains 80 builders with which you can build a foundation for the next level.</p>
-            <p>This builder focuses on developing the following skills, amongst others:</p>
+            <p>Here are some of the skills this builder helps develop:</p>
             <div id="details-skills">
                 {#each products[index].skill_list as skill}
                     <li>{skill}</li>

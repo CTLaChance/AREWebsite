@@ -15,49 +15,42 @@
         animation: component-load 1s .25s cubic-bezier(.61,.02,.24,.98) both;
 
         #testimonials-content {
-            width: 70%;
-            margin: auto auto auto 0;
+            $width: 50%;
+            width: $width;
+            margin: auto auto auto #{(35% - ($width / 2))};
 
-            display: flex;
+            #testimonials-navigation {
+                margin-top: auto;
 
-            #testimonials-left {
-                margin-right: 15px;
                 display: flex;
-                flex-direction: column;
+                justify-content: center;
+                align-items: center;
 
-                #testimonials-navigation {
-                    margin-top: auto;
+                font-size: 32px;
 
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                > * {
+                    margin-right: 15px;
+                }
 
-                    font-size: 32px;
-
-                    > * {
-                        margin-right: 15px;
-                    }
-
-                    img {
-                        width: 32px;
-                        height: 32px;
-                        cursor: pointer;
-                    }
+                img {
+                    width: 32px;
+                    height: 32px;
+                    cursor: pointer;
                 }
             }
 
-            #testimonials-right {
-                border-left: 1px solid #bbbbbb;
-                padding-left: 15px;
+            h1{
+                margin: 0 0 8px 0;
             }
 
-            h1, h3, h4 {
-                margin-top: 0;
+            h2 {
+                margin: 0;
+                padding-bottom: 16px;
+                border-bottom: 1px solid #bbbbbb;
             }
 
-            h3, h4{
+            h2, h3, h4{
                 font-weight: 400;
-                text-align: justify;
             }
         }
     }
@@ -66,20 +59,15 @@
 <div id="testimonials">
     <ReturnArrow />
     <div id="testimonials-content">
-        <div id="testimonials-left">
-            <h1>TESTIMONIALS</h1>
-            <h3>See what others are saying about Algebra Readiness Educators.</h3>
-            
-            <div id="testimonials-navigation">
-                <img src="back_arrow.svg" alt="Previous testimonial." on:click={() => {if(--index < 0) index = testimonials.length - 1}}>
-                <div>{index + 1} / {testimonials.length}</div>
-                <img src="forward_arrow.svg" alt="Next testimonial." on:click={() => {if(++index >= testimonials.length) index = 0}}>
-            </div>
-        </div>
+        <h1>TESTIMONIALS</h1>
+        <h2>Here's what others are saying about Algebra Readiness Educators.</h2>
+        <h3>"{testimonials[index].testimonial}"</h3>
+        <h4>- {testimonials[index].author}</h4>
 
-        <div id="testimonials-right">
-            <h3>"{testimonials[index].testimonial}"</h3>
-            <h4>- {testimonials[index].author}</h4>
+        <div id="testimonials-navigation">
+            <img src="back_arrow.svg" alt="Previous testimonial." on:click={() => {if(--index < 0) index = testimonials.length - 1}}>
+            <div>{index + 1} / {testimonials.length}</div>
+            <img src="forward_arrow.svg" alt="Next testimonial." on:click={() => {if(++index >= testimonials.length) index = 0}}>
         </div>
     </div>
 </div>
