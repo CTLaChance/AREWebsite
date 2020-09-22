@@ -67,9 +67,6 @@
         <div>
             <h1>TESTIMONIALS</h1>
             <h2>Here's what others are saying about Algebra Readiness Educators.</h2>
-        </div>
-        
-        <div>
             <h3>"{testimonials[index].testimonial}"</h3>
             <h4>- {testimonials[index].author}</h4>
         </div>
