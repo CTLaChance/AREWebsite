@@ -19,6 +19,11 @@
             width: $width;
             margin: auto auto auto #{(35% - ($width / 2))};
 
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
             #testimonials-navigation {
                 margin-top: auto;
 
@@ -59,10 +64,15 @@
 <div id="testimonials">
     <ReturnArrow />
     <div id="testimonials-content">
-        <h1>TESTIMONIALS</h1>
-        <h2>Here's what others are saying about Algebra Readiness Educators.</h2>
-        <h3>"{testimonials[index].testimonial}"</h3>
-        <h4>- {testimonials[index].author}</h4>
+        <div>
+            <h1>TESTIMONIALS</h1>
+            <h2>Here's what others are saying about Algebra Readiness Educators.</h2>
+        </div>
+        
+        <div>
+            <h3>"{testimonials[index].testimonial}"</h3>
+            <h4>- {testimonials[index].author}</h4>
+        </div>
 
         <div id="testimonials-navigation">
             <img src="back_arrow.svg" alt="Previous testimonial." on:click={() => {if(--index < 0) index = testimonials.length - 1}}>
