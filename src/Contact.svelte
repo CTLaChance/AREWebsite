@@ -100,15 +100,15 @@
             <a href="https://www.facebook.com/AlgebraReadinessEducatorsLLC/" target="_blank" width="24px" height="24px"><img src="facebook_icon.svg" alt="Facebook"></a>
         </div>
 
-        <form>
+        <form action="https://formspree.io/mzbkbrwn" method="POST">
             <div id="form-sender">
-                <input type="text" id="name" placeholder="Name">
-                <input type="email" id="email" placeholder="Email">
+                <input type="text" id="name" name="name" placeholder="Name">
+                <input type="email" id="email" name="sender_email" placeholder="Email">
             </div>
 
-            <input placeholder="Subject">
-            <textarea rows="15"></textarea>
-            <button class="button">SEND<img src="send.svg" height="20px" weight="20px" alt="Send Icon"></button>
+            <input type="text" name="subject" placeholder="Subject">
+            <textarea name="content" rows="15"></textarea>
+            <button type="submit" class="button">SEND<img src="send.svg" height="20px" weight="20px" alt="Send Icon"></button>
         </form>
     </div>
 </div>
