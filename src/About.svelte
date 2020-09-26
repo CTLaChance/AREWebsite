@@ -53,8 +53,8 @@
     <ReturnArrow />
     <div id="about-content">
         <div id="about-left">
-            <div id="left-portrait"><img src="./portraits/kathy.jpg" alt="Katherine LaChance Portrait"></div>
-            <div id="right-portrait"><img src="./portraits/rhonda.jpg" alt="Rhonda Brady Portrait"></div>
+            <div id="left-portrait"><img src="./kathy.jpg" alt="Katherine LaChance Portrait"></div>
+            <div id="right-portrait"><img src="./rhonda.jpg" alt="Rhonda Brady Portrait"></div>
         </div>
         <div id="about-right">
             <h1>ABOUT US</h1>
