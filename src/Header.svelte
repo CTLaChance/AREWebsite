@@ -3,28 +3,38 @@
 
 <style lang="scss">
     #header {
-        width: 70%;
-        margin: 0px auto;
-        padding: 25px 0px;
-        
         // Don't shrink the header whe main content changes.
         // Used in creating a sticky footer.
         flex-shrink: 0;
+        margin: 0px auto;
+        padding: 25px 0px;
+        width: 70%;
 
         display: flex;
         justify-content: center;
         align-items: center;
 
-        font-family: 'Montserrat';
+        h1 {
+            font-family: 'Montserrat';
+            word-break: none;
+            margin: 0;
+        }
 
         img {
             height: 128px;
             width:  128px;
         }
 
-        h1 {
-            word-break: none;
-            margin: 0;
+        // Mobile design.
+        @media screen and (orientation: portrait) {
+            flex-direction: column;
+            text-align: center;
+
+            img {
+                height: 256px;
+                width: 256px;
+                margin-bottom: 16px;
+            }
         }
     }
 </style>

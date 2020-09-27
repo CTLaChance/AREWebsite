@@ -25,6 +25,7 @@
                     display: flex;
                     align-items: center;
                     justify-content: flex-end;
+                    text-align: right;
 
                     font-family: 'Montserrat';
                     font-size: 16px;
@@ -69,6 +70,42 @@
                 }
             }
         }
+
+        // Mobile design.
+        @media screen and (orientation: portrait) {
+            #footer-upper {
+                flex-direction: column;
+
+                #footer-left {
+                    width: 100%;
+                    border-bottom: 1px solid #bbbbbb;
+
+                    #footer-company {
+                        padding: 0;
+                        flex-direction: column;
+                        text-align: center;
+
+                        font-size: 13px;
+
+                        h4 {
+                            margin: 16px 0;
+                        }
+                    }
+                }
+
+                #footer-right {
+                    border: none;
+                    padding: 16px 0 0 0;
+                    text-align: center;
+
+                    span {
+                        display: block;
+                        margin-top: 16px;
+                        color: black;
+                    }
+                }
+            }
+        }
     }
 </style>
 
@@ -82,10 +119,10 @@
         </div>
 
         <div id="footer-right">
-            <Link to="about">About</Link>
-            <Link to="contact">Contact</Link>
-            <Link to="testimonials">Testimonials</Link>
-            <Link to="licensing">Licensing</Link>
+            <Link to="about"><span>About</span></Link>
+            <Link to="contact"><span>Contact</span></Link>
+            <Link to="testimonials"><span>Testimonials</span></Link>
+            <Link to="licensing"><span>Licensing</span></Link>
         </div>
     </div>
 

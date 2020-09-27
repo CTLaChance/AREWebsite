@@ -37,6 +37,14 @@
                 transform: scale(1.1, 1.1);
                 cursor: pointer;
             }
+
+            user-select: none;
+        }
+
+        // Mobile design.
+        @media screen and (orientation: portrait) {
+            display: flex;
+            flex-direction: column;
         }
     }
 </style>
