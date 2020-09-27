@@ -30,9 +30,8 @@
             flex-direction: column;
             text-align: center;
 
+            border-bottom: 1px solid #bbbbbb;
             img {
-                height: 256px;
-                width: 256px;
                 margin-bottom: 16px;
             }
         }
