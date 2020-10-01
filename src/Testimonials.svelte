@@ -10,7 +10,7 @@
         display: flex;
         justify-content: left;
         align-items: center;
-        height: fit-content;
+        height: 100%;
 
         animation: component-load 1s .25s cubic-bezier(.61,.02,.24,.98) both;
 
@@ -56,7 +56,8 @@
 
         @media screen and (orientation: portrait) {
             flex-direction: column;
-            
+            height: fit-content;
+
             #testimonials-content {
                 width: 70%;
                 margin: 0 auto;
