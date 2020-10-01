@@ -7,7 +7,9 @@
         display: flex;
         justify-content: left;
         align-items: center;
-        height: 100%;
+        height: fit-content;
+
+        animation: component-load 1s .25s cubic-bezier(.61,.02,.24,.98) both;
 
         #contact-content {
             width: 70%;
@@ -85,9 +87,41 @@
                     }
                 }
             }
-        }
 
-        animation: component-load 1s .25s cubic-bezier(.61,.02,.24,.98) both;
+            @media screen and (orientation: portrait) {
+                margin: auto;
+                flex-direction: column;
+
+                #contact-left {
+                    width: 100%;
+                    margin-top: 16px;
+
+                    h1 {
+                        text-align: center;
+                    }
+                }
+
+                form {
+                    width: 100%;
+                    border: none;
+                    padding: 0;
+                    margin: 16px 0px;
+
+                    #form-sender {
+                        flex-direction: column;
+
+                        :first-child {
+                            width: inherit;
+                            margin-right: 0px;
+                        }
+        
+                        :last-child {
+                            width: inherit;
+                        }
+                    }
+                }
+            }
+        }
     }
 </style>
 
@@ -96,18 +130,18 @@
     <div id="contact-content">
         <div id="contact-left">
             <h1>CONTACT US</h1>
-            <h3>Want to buy in bulk? Just want to say hello? <br> Send us an email and we'll get back to you soon.</h3>
+            <h3>Want to buy in bulk? Just want to say hello? Send us an email and we'll get back to you soon.</h3>
             <a href="https://www.facebook.com/AlgebraReadinessEducatorsLLC/" target="_blank" width="24px" height="24px"><img src="facebook_icon.svg" alt="Facebook"></a>
         </div>
 
         <form action="https://formspree.io/mzbkbrwn" method="POST">
             <div id="form-sender">
-                <input type="text" id="name" name="name" placeholder="Name">
-                <input type="email" id="email" name="sender_email" placeholder="Email">
+                <input type="text" id="name" name="name" placeholder="Name" required>
+                <input type="email" id="email" name="sender_email" placeholder="Email" required>
             </div>
 
             <input type="text" name="subject" placeholder="Subject">
-            <textarea name="content" rows="15"></textarea>
+            <textarea name="content" rows="15" required></textarea>
             <button type="submit" class="button">SEND<img src="send.svg" height="20px" weight="20px" alt="Send Icon"></button>
         </form>
     </div>
