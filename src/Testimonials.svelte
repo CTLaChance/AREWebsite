@@ -10,7 +10,7 @@
         display: flex;
         justify-content: left;
         align-items: center;
-        height: 100%;
+        height: fit-content;
 
         animation: component-load 1s .25s cubic-bezier(.61,.02,.24,.98) both;
 
@@ -51,6 +51,20 @@
             h3, h4{
                 font-weight: 400;
                 text-align: justify;
+            }
+        }
+
+        @media screen and (orientation: portrait) {
+            flex-direction: column;
+            
+            #testimonials-content {
+                width: 70%;
+                margin: 0 auto;
+
+                h1 {
+                    border: none;
+                    text-align: center;
+                }
             }
         }
     }
