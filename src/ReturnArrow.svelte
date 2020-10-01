@@ -24,6 +24,10 @@
                 transform: translate(-25%, 0%);
             }
         }
+
+        @media screen and (orientation: portrait) {
+            display: none;
+        }
     }
 </style>
 

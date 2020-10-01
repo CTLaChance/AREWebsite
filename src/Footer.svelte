@@ -101,7 +101,6 @@
                     span {
                         display: block;
                         margin-top: 16px;
-                        color: black;
                     }
                 }
             }

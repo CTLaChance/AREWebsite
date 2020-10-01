@@ -7,7 +7,7 @@
         display: flex;
         justify-content: left;
         align-items: center;
-        height: 100%;
+        height: fit-content;
 
         animation: component-load 1s .25s cubic-bezier(.61,.02,.24,.98) both;
 
@@ -43,6 +43,31 @@
     
                 h3 {
                     font-weight: 400;
+                }
+            }
+
+            @media screen and (orientation: portrait) {
+                margin: auto;
+                flex-direction: column;
+
+                #about-left {
+                    width: 100%;
+                    margin-top: 16px;
+                }
+
+                #about-right {
+                    width: 100%;
+                    padding: 0;
+                    border: none;
+                    
+                    h1 {
+                        text-align: center;
+                        margin: 16px 0px;
+                    }
+
+                    h3 {
+                        margin: 16px 0px;
+                    }
                 }
             }
         }
