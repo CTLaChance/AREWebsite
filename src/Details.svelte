@@ -9,31 +9,10 @@
 
 <style lang="scss">
     #details {
-        // Animation styling.
-        @keyframes details-slide {
-            0% {
-                transform: translate(15%, 0%);
-            }
-
-            100% {
-                transform: translate(0%, 0%);
-            }
-        }
-
-        @keyframes details-opacity {
-            0% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-
         animation: component-load 1s .25s cubic-bezier(.61,.02,.24,.98) both;
 
         // Details styling.
-        height: 100%;
+        height: fit-content;
         display: flex;
         justify-content: left;
         align-items: center;
@@ -71,6 +50,33 @@
                 #details-buttons {
                     margin-top: 16px;
                     display: flex;
+                }
+            }
+
+            @media screen and (orientation: portrait) {
+                flex-direction: column;
+                margin: auto;
+                
+                #details-cover {
+                    width: 100%;
+                    margin: 16px 0;
+                }
+
+                #details-text {
+                    width: 100%;
+
+                    h2 {
+                        text-align: center;
+                    }
+
+                    #details-buttons {
+                        flex-direction: column;
+
+                        a {
+                            margin: 8px 0px;
+                            text-align: center;
+                        }
+                    }
                 }
             }
         }
