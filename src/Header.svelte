@@ -1,4 +1,5 @@
 <script>
+    import {Link} from 'svelte-routing';
 </script>
 
 <style lang="scss">
@@ -39,6 +40,6 @@
 </style>
 
 <div id="header">
-    <img src="favicon.png" alt="Logo">
+    <Link to="/"><img src="favicon.png" alt="Logo"></Link>
     <h1>ALGEBRA READINESS EDUCATORS</h1>
 </div>
