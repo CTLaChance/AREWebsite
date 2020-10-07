@@ -1,0 +1,86 @@
+[
+  {
+    "name": "3rd_Grade",
+    "cover": "./covers/grade3_cover.jpg",
+    "sample": "./samples/grade3_sample.jpg",
+    "skill_list": ["Basic Arithmetic", "Comparisons", "Money", "Basic Geometry", "Time", "Capacity & Weight"],
+    "link": "http://amzn.to/2H5P1zH"
+  },
+  {
+    "name": "4th_Grade",
+    "cover": "./covers/grade4_cover.jpg",
+    "sample": "./samples/grade4_sample.jpg",
+    "skill_list": ["Whole Numbers", "Digit Place Values", "Money", "Decimals", "Fractions", "Unit Conversions"],
+    "link": "http://amzn.to/2nRNKV8"
+  },
+  {
+    "name": "5th_Grade",
+    "cover": "./covers/grade5_cover.jpg",
+    "sample": "./samples/grade5_sample.jpg",
+    "skill_list": ["Intermediate Arithmetic", "Whole Numbers", "Expressions", "Equations", "Intermediate Geometry", "Improper Fractions", "Word Problems"],
+    "link": "http://amzn.to/2H5JSYE"
+  },
+  {
+    "name": "6th_Grade",
+    "cover": "./covers/grade6_cover.jpg",
+    "sample": "./samples/grade6_sample.jpg",
+    "skill_list": ["Integer Arithmetic", "Prime Factorization", "Expression Evaluation", "Fraction to Decimal Conversion", "The Distributive Property"],
+    "link": "http://amzn.to/2BmlzoQ"
+  },
+  {
+    "name": "7th_Grade",
+    "cover": "./covers/grade7_cover.jpg",
+    "sample": "./samples/grade7_sample.jpg",
+    "skill_list": ["Multivariable Equations", "Proportions", "The Coordinate Grid", "Geometric Measurements", "Inequalities"],
+    "link": "https://amzn.to/2Jx1Pm3"
+  },
+  {
+    "name": "Pre_Algebra",
+    "cover": "./covers/prealgebra_cover.jpg",
+    "sample": "./samples/prealgebra_sample.jpg",
+    "skill_list": ["Scientific Notation", "Formulas", "Exponents", "Polynomial Distribution and Collection", "Graphs", "Independent and Dependent Variables", "Domain and Range"],
+    "link": "http://amzn.to/2H8v7nY"
+  },
+  {
+    "name": "Algebra",
+    "cover": "./covers/algebra1_cover.jpg",
+    "sample": "./samples/algebra1_sample.jpg",
+    "skill_list": ["Equations and Expressions", "Function Rules and Tables", "Direct Variations", "Systems of Equations", "Factoring"],
+    "link": "http://amzn.to/2snMIVE"
+  },
+  {
+    "name": "Geometry",
+    "cover": "./covers/geometry_cover.jpg",
+    "sample": "./samples/geometry_sample.jpg",
+    "skill_list": ["Distance and Midpoint Formulas", "Angles", "Conditional Statements", "2D Composites", "Effects of Change"],
+    "link": "http://amzn.to/2EZisTL"
+  },
+  {
+    "name": "Algebra_2",
+    "cover": "./covers/algebra2_cover.jpg",
+    "sample": "./samples/algebra2_sample.jpg",
+    "skill_list": ["Transformations", "Parent Functions", "Function Notation", "Logarithms and Exponents", "Graphing Inequalties"],
+    "link": "http://amzn.to/2CcCUxc"
+  },
+  {
+    "name": "3rd_Grade_Spanish_Edition",
+    "cover": "./covers/grade3_spanish_cover.jpg",
+    "sample": "./samples/grade3_spanish_sample.jpg",
+    "skill_list": ["Basic Arithmetic", "Comparisons", "Money", "Basic Geometry", "Time", "Capacity & Weight"],
+    "link": "http://amzn.to/2EXhzLq"
+  },
+  {
+    "name": "4th_Grade_Spanish_Edition",
+    "cover": "./covers/grade4_spanish_cover.jpg",
+    "sample": "./samples/grade4_spanish_sample.jpg",
+    "skill_list": ["Whole Numbers", "Digit Place Values", "Money", "Decimals", "Fractions", "Unit Conversions"],
+    "link": "http://amzn.to/2EifMDf"
+  },
+  {
+    "name": "5th_Grade_Spanish_Edition",
+    "cover": "./covers/grade5_spanish_cover.jpg",
+    "sample": "./samples/grade5_spanish_sample.jpg",
+    "skill_list": ["Intermediate Arithmetic", "Whole Numbers", "Expressions", "Equations", "Intermediate Geometry", "Improper Fractions", "Word Problems"],
+    "link": "http://amzn.to/2EkBpD2"
+  }
+]

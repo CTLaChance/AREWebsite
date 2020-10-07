@@ -1,0 +1,75 @@
+html, body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+    /* Used to ensure the header and footer are at the top and bototm of the page respectively. */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    /* Hides the horizontal scroll bar when sliding content in from the sides.*/
+    overflow-x: hidden;
+}
+
+.button {
+    color: black;
+    background: white;
+    border: 2px black solid;
+    border-radius: 25px;
+    padding: 10px 50px;
+    margin: 0 10px 0 0;
+
+    transition: all .05s 0s linear;
+
+    text-decoration: none;
+}
+
+.button:hover {
+    cursor: pointer;
+    color: white;
+    background: black;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: black;
+}
+
+@keyframes component-load {
+    0% {
+        transform: translate(15%, 0%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+}
+
+@media screen and (orientation: portrait) { 
+    @keyframes component-load {
+        0% {
+            transform: translate(0%, 15%);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translate(0%, 0%);
+            opacity: 1;
+        }
+    }
+}
