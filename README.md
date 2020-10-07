@@ -3,7 +3,7 @@ https://algebrareadinesseducators.com
 
 https://areducators.com
 
-This is the 3rd revision of the Algebra Readiness Educators, LLC site and was created with Svelte, SCSS, and Javascript.
+This is the 3rd revision of the Algebra Readiness Educators, LLC site; created with Svelte.
 
 ## Running Locally
 *Note that you will need to have [Node.js](https://nodejs.org) installed.*
