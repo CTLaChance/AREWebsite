@@ -1,8 +1,9 @@
 # Algebra Readiness Educators, LLC - Official Website
 https://algebrareadinesseducators.com
+
 https://areducators.com
 
-This is the source code for the Algebra Readiness Educators, LLC website. This is the 3rd revision of the site and was made with Svelte, a lightweight front-end framework akin to Vue or React.
+This is the 3rd revision of the Algebra Readiness Educators, LLC site and was created with Svelte, SCSS, and Javascript.
 
 ## Running Locally
 *Note that you will need to have [Node.js](https://nodejs.org) installed.*
